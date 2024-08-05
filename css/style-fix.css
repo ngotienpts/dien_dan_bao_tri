@@ -1,0 +1,65 @@
+﻿@charset "UTF-8";
+.bg-detail.is-single .l-sidebar {
+	display: none;
+}
+.bg-detail.is-single .l-main {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto !important;
+	max-width: 600px !important;
+}
+.bg-detail.is-single .l-main .c-detail-head {
+	padding: 0;
+}
+.bg-detail.is-single .l-main .c-news-detail {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .bg-detail.is-single .c-share-scroll.has-fixed {
+	/*position: absolute;*/
+  }
+  .entry .sc-longform-header-no-bg-img {
+	padding-top: 150px;
+  }
+}
+.invisible-box {
+	opacity: 0;
+	pointer-events: none;
+}
+
+/*new*/
+.onecms_load_view.fadeout {
+	position: relative;
+}
+.onecms_load_view.fadeout::after {
+	animation: shimmer 2s linear infinite reverse;
+	background-image: -webkit-gradient(linear,left top,right top,from(#ddd),color-stop(5%,#eee),color-stop(6%,#ddd),color-stop(66%,#ddd),color-stop(71%,#eee),color-stop(72%,#ddd),to(#ddd));
+	background-image: linear-gradient(90deg,#ddd,#eee 5%,#ddd 6%,#ddd 66%,#eee 71%,#ddd 72%,#ddd);
+	background-size: 300% 100%;
+	bottom: 0;
+	content: "";
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+@keyframes shimmer {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 100% 0;
+	}
+}
+/*.entry, .entry p, .entry h2, .entry h3, .entry h4, .entry blockquote,
+.entry address, .entry blockquote, .entry dl,
+.entry figure, .entry ol, .entry p, .entry pre, .entry table, .entry ul,
+.entry .image-responsive, .entry .grid,
+.entry .sc-longform-header-default-normal .sc-longform-header-text {
+	max-width: 730px;
+}*/
+
